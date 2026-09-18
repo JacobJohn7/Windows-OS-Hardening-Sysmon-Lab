@@ -26,7 +26,7 @@
     <Data Name="LogonId">0x3e703</Data>
     <Data Name="TerminalSessionId">1</Data>
     <Data Name="IntegrityLevel">Medium</Data>
-    <Data Name="Hashes">MD5=A1B2C3D4E5F60718293A4B5C6D7E8F90,SHA256=8F9A7B6C5D4E3F2A1B0C9D8E7F6A5B4C3D2E1F0A9B8C7D6E5F4A3B2C1D0E9F8A</Data>
+    <Data Name="Hashes">MD5=93B4E38A5F2D1C0E7B6A4D9F8E2C1A3F,SHA256=3A4F89D10E6B52C18D9F0412E87A3B4C5D6E7F8A9B0C1D2E3F4A5B6C7D8E9F0A</Data>
     <Data Name="ParentProcessGuid">{5770795f-a1b0-66f8-1000-000000000400}</Data>
     <Data Name="ParentProcessId">3204</Data>
     <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>

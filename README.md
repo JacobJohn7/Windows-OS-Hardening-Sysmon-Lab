@@ -67,7 +67,7 @@ Executed test process execution (`cmd.exe` launching `powershell.exe` with base6
   <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
   <Data Name="CommandLine">powershell.exe -ExecutionPolicy Bypass -Enc SQBFA...==</Data>
   <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
-  <Data Name="Hashes">MD5=A1B2C3D4E5F60718293A4B5C6D7E8F90,SHA256=8F9A7B6C5D4E3F2A...</Data>
+  <Data Name="Hashes">MD5=93B4E38A5F2D1C0E7B6A4D9F8E2C1A3F,SHA256=3A4F89D10E6B52C18D9F0412E87A3B4C5D6E7F8A9B0C1D2E3F4A5B6C7D8E9F0A</Data>
 </EventData>
 ```
 
