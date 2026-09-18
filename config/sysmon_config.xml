@@ -1,0 +1,47 @@
+<Sysmon schemaversion="4.90">
+  <HashAlgorithms>MD5,SHA256</HashAlgorithms>
+  <EventFiltering>
+    <!-- Event ID 1: Process Creation -->
+    <RuleGroup name="" groupRelation="or">
+      <ProcessCreate onmatch="exclude">
+        <!-- Exclude noisy standard system processes -->
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+        <Image condition="is">C:\Windows\System32\SearchIndexer.exe</Image>
+        <Image condition="is">C:\Windows\System32\conhost.exe</Image>
+      </ProcessCreate>
+    </RuleGroup>
+
+    <!-- Event ID 3: Network Connection -->
+    <RuleGroup name="" groupRelation="or">
+      <NetworkConnect onmatch="include">
+        <!-- Include suspicious command interpreters making outbound connections -->
+        <Image condition="image">powershell.exe</Image>
+        <Image condition="image">cmd.exe</Image>
+        <Image condition="image">rundll32.exe</Image>
+        <Image condition="image">certutil.exe</Image>
+      </NetworkConnect>
+    </RuleGroup>
+
+    <!-- Event ID 11: File Create -->
+    <RuleGroup name="" groupRelation="or">
+      <FileCreate onmatch="include">
+        <!-- Monitor executable / script drops in temp and public directories -->
+        <TargetFilename condition="contains">C:\Users\Public\</TargetFilename>
+        <TargetFilename condition="contains">\AppData\Local\Temp\</TargetFilename>
+        <TargetFilename condition="end with">.ps1</TargetFilename>
+        <TargetFilename condition="end with">.vbs</TargetFilename>
+        <TargetFilename condition="end with">.bat</TargetFilename>
+        <TargetFilename condition="end with">.exe</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+
+    <!-- Event ID 22: DNS Query -->
+    <RuleGroup name="" groupRelation="or">
+      <DnsQuery onmatch="exclude">
+        <!-- Exclude internal domain queries -->
+        <QueryName condition="end with">.microsoft.com</QueryName>
+        <QueryName condition="end with">.windowsupdate.com</QueryName>
+      </DnsQuery>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
