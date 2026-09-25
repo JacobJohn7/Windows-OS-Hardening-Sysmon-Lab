@@ -1,5 +1,10 @@
 # Windows 10 Hardening & Sysmon Telemetry Lab
 
+![Windows 10](https://img.shields.io/badge/Windows-10_Pro-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Sysmon v15](https://img.shields.io/badge/Sysmon-v15.x_XML-brightgreen?style=for-the-badge)
+![CIS Benchmark](https://img.shields.io/badge/CIS-Hardening_Benchmark-blue?style=for-the-badge)
+![Event 4104](https://img.shields.io/badge/PowerShell-ScriptBlock_Logging-purple?style=for-the-badge&logo=powershell&logoColor=white)
+
 Configurations, audit scripts, and Sysmon XML rules implemented on a Windows 10 VirtualBox virtual machine to align with CIS Benchmarks and establish endpoint telemetry for SOC monitoring.
 
 ---
